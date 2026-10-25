@@ -1,29 +1,46 @@
 # ORDEXA — Data Transformation Workspace
 
-**Turn Data Chaos Into Clarity.**
+### Turn Data Chaos Into Clarity.
 
-ORDEXA is a Python-based web application designed to make CSV data inspection and transformation simple. Upload a dataset, explore its contents, clean inconsistencies, and export the transformed data through a modern, dark-themed interface.
+ORDEXA is a Python-based web application designed to make CSV data inspection and transformation simple. It allows users to upload datasets, explore their contents, clean inconsistencies, and export transformed data through a modern, dark-themed interface.
+
+---
+
+## 🖥️ Preview
+
+### Dashboard Overview
+
+![ORDEXA Dashboard](ordexa-dashboard.png)
+
+### CSV Transformation Workspace
+
+![ORDEXA Workspace](ordexa-workspace.png)
+
+---
 
 ## ✨ Features
 
-- 📂 **CSV Upload** — Import CSV files for processing.
-- 📊 **Data Preview** — View uploaded data in a structured table.
-- 📈 **Dataset Statistics** — Check row counts, column counts, and missing values.
-- ✏️ **Rename Columns** — Change column names to make datasets easier to understand.
-- 🧹 **Remove Duplicates** — Identify and remove duplicate rows.
-- 🪄 **Fill Missing Values** — Handle empty cells in the dataset.
-- 🔍 **Search Data** — Search the displayed table.
-- 📥 **CSV Export** — Download the transformed dataset.
-- 🎨 **Modern Interface** — Explore your data through a responsive, dark-themed dashboard.
+- **CSV Upload:** Import CSV files for processing.
+- **Data Preview:** View uploaded data in a structured table.
+- **Dataset Statistics:** View the total number of rows, columns, and missing values.
+- **Rename Columns:** Rename columns to make datasets easier to understand.
+- **Remove Duplicates:** Remove duplicate records from a dataset.
+- **Fill Missing Values:** Handle empty cells in the dataset.
+- **Search Data:** Search through the displayed dataset.
+- **CSV Export:** Download the transformed dataset as a CSV file.
+- **Modern Interface:** Work with data through a responsive, dark-themed dashboard.
 
-## 🛠️ Built With
+## 🛠️ Technologies Used
 
-- **Python** — Application logic
-- **Flask** — Web framework and backend routes
-- **Pandas** — CSV processing and data transformation
-- **HTML5** — Page structure
-- **CSS3** — Interface styling and responsive layout
-- **JavaScript** — Frontend interactions
+| Technology | Purpose |
+|---|---|
+| Python | Application logic and backend processing |
+| Flask | Web framework and application routes |
+| Pandas | CSV processing and data transformation |
+| HTML5 | Webpage structure |
+| CSS3 | Styling, layout, and responsive design |
+| JavaScript | Frontend interactions and API communication |
+| Git & GitHub | Version control and project hosting |
 
 ## 📁 Project Structure
 
@@ -40,12 +57,20 @@ csv-data-mapper/
     └── index.html
 ```
 
+The screenshots shown in this README are stored in the project root:
+
+```text
+ordexa-dashboard.png
+ordexa-workspace.png
+```
+
 ## ⚙️ Installation and Setup
 
 ### Prerequisites
 
 - Python installed on your computer
 - Git installed on your computer
+- A modern web browser
 
 ### 1. Clone the repository
 
@@ -53,7 +78,7 @@ csv-data-mapper/
 git clone https://github.com/sahidtanweer21-collab/csv-data-mapper.git
 ```
 
-### 2. Open the project directory
+### 2. Navigate to the project directory
 
 ```bash
 cd csv-data-mapper
@@ -93,27 +118,49 @@ python app.py
 
 Open your browser and visit:
 
-```text
-http://127.0.0.1:5000/
-```
+**http://127.0.0.1:5000/**
 
-## 🔄 How It Works
+The application will run locally on your computer.
 
-1. Upload a CSV file.
-2. Inspect the dataset and its statistics.
-3. Search the displayed data or rename a column.
-4. Remove duplicate rows or fill missing cells.
-5. Download the transformed dataset as a CSV file.
+## 🔄 How to Use ORDEXA
 
-## 🎯 Project Goal
+1. Open ORDEXA in your browser.
+2. Upload a CSV file from your computer.
+3. Inspect the dataset and its statistics.
+4. Search the displayed data or rename a column.
+5. Remove duplicate rows or fill missing cells.
+6. Export the transformed dataset as a CSV file.
 
-ORDEXA was developed as a learning project to explore Python web development, data processing with Pandas, frontend-backend communication, and Git-based version control.
+## 🎯 Project Objective
+
+ORDEXA was developed as a programming project to explore Python web development, data manipulation with Pandas, frontend-backend communication, and version control using Git and GitHub.
+
+The goal is to make basic data-cleaning operations accessible through a simple and intuitive interface.
+
+## 🔒 Data Handling
+
+ORDEXA processes uploaded CSV data through its Flask backend. The current application keeps the active dataset in server-side memory during the session rather than using a persistent database.
+
+The application is intended as a learning project and is not yet configured for production deployment.
+
+## 🚀 Future Improvements
+
+Potential future enhancements include:
+
+- Support for additional file formats.
+- More data-cleaning operations.
+- Improved data visualization.
+- User authentication and saved datasets.
+- Additional validation and error handling.
+- Public deployment with production-ready configuration.
 
 ## 👨‍💻 Author
 
-**Sahid Tanweer**
+**Sahid Tanweer Ahmed**
 
-Developed as a programming project using Python, Flask, Pandas, HTML, CSS, and JavaScript.
+B.Tech Computer Science and Engineering student.
+
+Developed using Python, Flask, Pandas, HTML, CSS, and JavaScript.
 
 ---
 
